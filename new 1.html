@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<form name="algo" action="pagina.php" method="POST">
+<input type="text" name="nombre"/> Nombre y apellidos
+<br>
+<input type="date" name="fecha"/> Fecha de nacimiento
+<br>
+<input type="text" name="ocupacion"/> Ocupacion
+<br>
+<input type="text" name="contactoa"/> Email
+<br>
+<input type="text" name="contactob"/> Telefono
+<br>
+Nacionalidad
+<select id="nacionalidad">
+  <option value="Peruano/a">Peruano/a</option>
+  <option value="Chileno/a">Chileno/a</option>
+  <option value="Estadounidense">Estadounidense</option>
+  <option value="Mexicano/a" selected>Mexicano/a</option>
+</select>
+<br>
+<label> Describa su nivel de ingles </label> <br>
+		<input type="radio" name="nivel" value="basico"/> Basico <br>
+		<input type="radio" name="nivel" value="intermedio"/> Intermedio <br>
+		<input type="radio" name="nivel" value="Avanzado"/> Avanzado <br>
+		<input type="radio" name="nivel" value="Fluido"/> Fluido <br>
+Lenguaje: <select name="lenguaje[]" multiple>
+            <option value="C++"> C++ </option> <br>
+            <option value="HTML"> HTML </option> <br>
+            <option value="Python"> Python </option> <br>
+            <option value="JavaScript"> JavaScript </option> <br>
+        </select> <br>
+Aptitudes: <input list="aptitudes" name="aptitudes">
+			<datalist id="aptitudes">
+				<option value="Creatividad">
+				<option value="Iniciativa">
+				<option value="Inteligencia Emocional">
+			</datalist> <br>
+<label> Habilidades </label> <br>
+            <input type="checkbox" name="habilidades" value="Flexibilidad"/> Flexibilidad <br>
+            <input type="checkbox" name="habilidades" value="Actitud"/> Actitud positiva <br>
+            <input type="checkbox" name="habilidades" value="Trabajo"/> Trabajo en equipo <br>
+            <input type="checkbox" name="habilidades" value="Aprendiz"/> Aprendiz rapido <br>
+Perfil: <textarea name="perfil" rows="10" cols="50"> </textarea> <br>
+<input type="submit" name="enviar" value="Enviar"/> 
+</form> 
+
+
+</body>
+</html>
